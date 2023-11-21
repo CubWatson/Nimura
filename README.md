@@ -10,5 +10,5 @@ Some people may enjoy adventuring, but their modpack may have too many tech mods
 
 ![nimura_header_1](https://i.imgur.com/LjDuTEW.png)
 
-## Known issues/bugs:
- - When loading in a server/world you may freeze for 7 seconds and unfreeze. Not sure what causes this, but I am aware of this issue.
+## Get the modpack on Modrinth!
+[Download here](https://modrinth.com/modpack/nimura)
