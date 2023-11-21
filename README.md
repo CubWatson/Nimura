@@ -1,3 +1,6 @@
+## Disclaimer:
+This repo only exists for issue tracking. If you have a issue, please report it to the Issues tab. Everything else (including downloads) will be on Modrinth only.
+
 ![nimura_header](https://i.imgur.com/0eW18hX.png)
 
 ## Special Project: Nimura! Your new home.
