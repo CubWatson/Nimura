@@ -1,0 +1,77 @@
+name: Bug report
+description: Something is broken, glitchy, or behaving strangely in Nimura.
+title: "[Bug] "
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this! Please search [existing issues](https://github.com/CubWatson/Nimura/issues?q=is%3Aissue) first so we don't get duplicates.
+  - type: input
+    id: pack-version
+    attributes:
+      label: Nimura version
+      description: Shown on the Modrinth page or in your launcher's instance settings.
+      placeholder: e.g. 1.0.2
+    validations:
+      required: true
+  - type: dropdown
+    id: launcher
+    attributes:
+      label: Launcher
+      options:
+        - Modrinth App
+        - Prism Launcher
+        - ATLauncher
+        - MultiMC
+        - Other (mention below)
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where does it happen?
+      options:
+        - Singleplayer
+        - Multiplayer (dedicated server)
+        - Multiplayer (LAN / open to LAN)
+        - On launch (game won't start)
+    validations:
+      required: true
+  - type: dropdown
+    id: modified
+    attributes:
+      label: Have you added, removed, or updated any mods?
+      description: Changes to the pack can cause problems we can't reproduce.
+      options:
+        - No, it's the pack exactly as installed
+        - Yes (list the changes below)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug and what you expected to happen instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Place a Create mechanical press...
+        2. Power it with...
+        3. See crash
+  - type: input
+    id: logs
+    attributes:
+      label: Log or crash report link
+      description: |
+        Upload `logs/latest.log` (or the file in `crash-reports/`) to [mclo.gs](https://mclo.gs) and paste the link here. Please don't paste whole logs into the issue.
+      placeholder: https://mclo.gs/...
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Screenshots, videos, specs, mod changes, etc.

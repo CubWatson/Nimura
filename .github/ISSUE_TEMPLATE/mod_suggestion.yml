@@ -1,0 +1,42 @@
+name: Mod suggestion
+description: Suggest a mod to add to (or remove from) Nimura.
+title: "[Mod] "
+labels: ["mod suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Nimura is a personal collection of mods I enjoy, so not every suggestion will make it in, but I read them all!
+  - type: dropdown
+    id: type
+    attributes:
+      label: Add or remove?
+      options:
+        - Add a mod
+        - Remove a mod
+    validations:
+      required: true
+  - type: input
+    id: mod-link
+    attributes:
+      label: Modrinth link
+      description: Nimura only uses mods hosted on Modrinth.
+      placeholder: https://modrinth.com/mod/...
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why?
+      description: What does it add, and how does it fit the pack?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: The mod is available on Modrinth for the pack's Minecraft version and loader.
+          required: true
+        - label: I searched existing issues and this hasn't been suggested yet.
+          required: true
